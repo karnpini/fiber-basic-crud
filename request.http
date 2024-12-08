@@ -1,0 +1,32 @@
+GET http://localhost:3001
+
+### Get all customers
+GET http://localhost:3001/customers
+
+### Get a customer by ID
+GET http://localhost:3001/customers/2
+
+### Create a new customer
+POST http://localhost:3001/customers
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "age": 30,
+  "email": "john.doe@example.com"
+}
+
+### Update a customer by ID
+PUT http://localhost:3001/customers/2
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "age": 25,
+  "email": "jane.doe@example.com"
+}
+
+### Delete a customer by ID
+DELETE http://localhost:3001/customers/2
